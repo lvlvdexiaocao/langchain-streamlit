@@ -13,7 +13,7 @@ from langchain_openai import ChatOpenAI
 # tavily = TavilySearch(max_results=3)
 
 
-model = ChatOpenAI(model="glm-4.6",
+model = ChatOpenAI(model="glm-4.5-flash",
                    api_key=os.getenv("ZHIPUAI_API_KEY"),
                    base_url="https://open.bigmodel.cn/api/paas/v4/")
 res = model.invoke("你好")
